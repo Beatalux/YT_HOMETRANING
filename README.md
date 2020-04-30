@@ -1,6 +1,6 @@
 # youtube_hometraining_app
 
-A new Flutter application.
+Let's do hometraining regularly while staying home
 
 ## Getting Started
 
