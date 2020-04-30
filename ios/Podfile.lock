@@ -1,0 +1,41 @@
+PODS:
+  - Flutter (1.0.0)
+  - flutter_youtube (0.0.1):
+    - Flutter
+    - XCDYouTubeKit
+  - webview_media (0.0.1):
+    - Flutter
+  - XCDYouTubeKit (2.13.0)
+  - youtube_api (0.2.1):
+    - Flutter
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - flutter_youtube (from `.symlinks/plugins/flutter_youtube/ios`)
+  - webview_media (from `.symlinks/plugins/webview_media/ios`)
+  - youtube_api (from `.symlinks/plugins/youtube_api/ios`)
+
+SPEC REPOS:
+  trunk:
+    - XCDYouTubeKit
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  flutter_youtube:
+    :path: ".symlinks/plugins/flutter_youtube/ios"
+  webview_media:
+    :path: ".symlinks/plugins/webview_media/ios"
+  youtube_api:
+    :path: ".symlinks/plugins/youtube_api/ios"
+
+SPEC CHECKSUMS:
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+  flutter_youtube: 142f8d5af0a11963bdc73e13bcae6eb78db746c2
+  webview_media: 33604c2c1805f41bd0c6749c4d7de24b8cb4d81d
+  XCDYouTubeKit: 4902fca1721b593112b6607c509a089e911294f3
+  youtube_api: 3e3c2faa0cf3f296204bcc93284cdb097f42cdd6
+
+PODFILE CHECKSUM: e45c292f618eeca3034958d33b444b6e1249b55f
+
+COCOAPODS: 1.9.1
