@@ -65,7 +65,8 @@ class _MainScreenState extends State<MainScreen> {
       body: Center(
         child: Column(
           children: <Widget>[
-            Container(
+            ClipPath(
+            child: Container(
               height: 250,
               width: MediaQuery.of(context).size.width,
               decoration: BoxDecoration(
@@ -75,6 +76,8 @@ class _MainScreenState extends State<MainScreen> {
                 ),
               ),
             ),
+                clipper:CustomClipPath(),
+              ),
             Container(
               decoration: BoxDecoration(
                   color: Colors.blue,
@@ -289,6 +292,26 @@ class _MainScreenState extends State<MainScreen> {
 //        isTwelveHourFormat: true);
 //  });
 //  }
+
+class CustomClipPath extends CustomClipper<Path> {
+  @override
+  Path getClip(Size size) {
+    // TODO: implement getClip
+    Path path=Path();
+    path.lineTo(0,size.height-10);
+    path.quadraticBezierTo(size.width/2,size.height-50,size.width,size.height-10);
+    path.lineTo(size.width,0);
+
+    return path;
+  }
+
+  @override
+  bool shouldReclip(CustomClipper<Path> oldClipper) {
+    // TODO: implement shouldReclip
+    return true;
+  }
+
+}
 
 Text WeekdayText(String s) {
   return Text(
